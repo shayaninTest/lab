@@ -1,0 +1,114 @@
+.SimName {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 700;
+}
+
+.SimBox {
+    position: relative;
+    height: 780px;
+    background-color: #212121;
+    top: 10px;
+}
+
+#canvas {
+    touch-action: none;
+    border-radius: 18px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+.overlay {
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+#canvasTop {
+    touch-action: none;
+    border-radius: 18px;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+.inputWaveType {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-570px, 0);
+    top: 577px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+select {
+    width: 120px;
+    height: 22px;
+}
+
+.inputAmplitude {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-506px, 0);
+    top: 610px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.inputLamda {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-484px, 0);
+    top: 640px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.inputFrequency {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-522px, 0);
+    top: 671px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Description {
+    text-align: left;
+    font-size: 16px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    width: 1400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 15px;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: -6px;
+}
+
+p {
+    color: #616161;
+}
+
+input[type=range] {
+    accent-color: rgb(116, 116, 116);
+    width: 129px;
+}

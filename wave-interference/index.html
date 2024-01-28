@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=1100 maximum-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr">
+        <title>Wave Interference</title>
+    </head>
+
+    <body>
+        <div class="SimName">
+            Wave Interference
+        </div>
+
+        <div class="SimBox">
+            <canvas id="canvas" width="1000" height="800" style="background: url('./Illustration/Exports/BG.png')"></canvas>
+            <img class='overlay' src="./Illustration/Exports/Overlay.png" alt="" />
+            
+            <div class='Amplitude1'>
+                <input type="range" id="AmplitudeSlider1" min="0" max="0.4" step="0.05" value="0.30">
+            </div>
+            <div class='Lamda1'>
+                <input type="range" id="LamdaSlider1" min="0.8" max="4" step="0.05" value="3.00">
+            </div>
+            <div class='Frequency1'>
+                <input type="range" id="FrequencySlider1" min="0" max="1.5" step="0.05" value="0.50">
+            </div>
+            <div class='Direction1'>
+                <input type="radio" id="direction1left" name="direction1" value="left" />
+                <input type="radio" id="direction1right" name="direction1" value="right" checked/>
+            </div>
+
+            <div class='Amplitude2'>
+                <input type="range" id="AmplitudeSlider2" min="0" max="0.4" step="0.05" value="0.30">
+            </div>
+            <div class='Lamda2'>
+                <input type="range" id="LamdaSlider2" min="0.8" max="4" step="0.05" value="3.00">
+            </div>
+            <div class='Frequency2'>
+                <input type="range" id="FrequencySlider2" min="0" max="1.5" step="0.05" value="0.50">
+            </div>
+            <div class='Direction2'>
+                <input type="radio" id="direction2left" name="direction2" value="left" />
+                <input type="radio" id="direction2right" name="direction2" value="right" checked/>
+            </div>
+
+            <div class="visualOption">
+                <input type="checkbox" id="dispVect" name="dispVect" />
+            </div>
+
+            <canvas id="canvasTop" width="1000" height="800"></canvas>
+        </div>
+
+        <div class="Description">
+            <h2>
+                Description
+            </h2>
+            <p>
+                ซิมมูเลชันแสดงการแทรกสอดของคลื่นสองขบวน
+            </p>
+            <h2>
+                Technical Details
+            </h2>
+            <p>
+                พัฒนาบน JavaScript และเรนเดอร์ด้วย HTML Canvas
+            </p>
+            <p>
+                Developer : Shayanin Vanichrudee
+            </p>
+        </div>
+
+        <script src="Interference.js"></script>
+    </body>
+</html>

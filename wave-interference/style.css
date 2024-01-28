@@ -1,0 +1,232 @@
+.SimName {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 700;
+}
+
+.SimBox {
+    position: relative;
+    height: 880px;
+    background-color: #212121;
+    top: 10px;
+}
+
+#canvas {
+    touch-action: none;
+    border-radius: 18px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+.overlay {
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+#canvasTop {
+    touch-action: none;
+    border-radius: 18px;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+.Amplitude1 {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-300px, 0);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Lamda1 {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-167px, 0);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Frequency1 {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(10px, 0);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Direction1 {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(85px, 0);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Amplitude2 {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-300px, 0);
+    top: 306px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Lamda2 {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-167px, 0);
+    top: 306px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Frequency2 {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(10px, 0);
+    top: 306px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Direction2 {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(85px, 0);
+    top: 306px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.visualOption {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-250px, 0);
+    top: 525px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Description {
+    text-align: left;
+    font-size: 16px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    width: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 15px;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: -6px;
+}
+
+p {
+    color: #616161;
+}
+
+input[type=range] {
+    accent-color: rgb(116, 116, 116);
+}
+
+input[type=checkbox] {
+    accent-color: rgb(116, 116, 116);
+}
+
+#AmplitudeSlider1 {
+    width: 40px;
+}
+
+#AmplitudeSlider2 {
+    width: 40px;
+}
+
+#LamdaSlider1 {
+    width: 80px;
+}
+
+#LamdaSlider2 {
+    width: 80px;
+}
+
+#FrequencySlider1 {
+    width: 60px;
+}
+
+#FrequencySlider2 {
+    width: 60px;
+}
+
+#direction1left {
+    appearance: none;
+    width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-right: 12px solid rgba(116, 116, 116, 0.32);
+	border-bottom: 6px solid transparent;
+    margin-right: 0;
+} 
+#direction1left:checked {
+    border-right: 12px solid rgb(116, 116, 116);
+}
+
+#direction1right {
+    appearance: none;
+    width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-left: 12px solid rgba(116, 116, 116, 0.32);
+	border-bottom: 6px solid transparent;
+    margin-left: 0;
+}
+#direction1right:checked {
+    border-left: 12px solid rgb(116, 116, 116);
+}
+
+#direction2left {
+    appearance: none;
+    width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-right: 12px solid rgba(116, 116, 116, 0.32);
+	border-bottom: 6px solid transparent;
+    margin-right: 0;
+} 
+#direction2left:checked {
+    border-right: 12px solid rgb(116, 116, 116);
+}
+
+#direction2right {
+    appearance: none;
+    width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-left: 12px solid rgba(116, 116, 116, 0.32);
+	border-bottom: 6px solid transparent;
+    margin-left: 0;
+}
+#direction2right:checked {
+    border-left: 12px solid rgb(116, 116, 116);
+}
