@@ -310,16 +310,21 @@ class Object {
 
     createShapePath() {
         context.beginPath();
-        context.arc(this.x*PpCM, this.y*PpCM, objClickableAreaRadius, 0, 2*Math.PI, false);
-        context.closePath();
+        context.arc(this.x*PpCM, this.y*PpCM, objClickableAreaRadius + 12, 0, 2*Math.PI, false); // plus 12 pixels for radius to make it easier to hit the object with small mobile screen
     }
 
     fillShape() {
+        context.beginPath();
+        context.arc(this.x*PpCM, this.y*PpCM, objClickableAreaRadius, 0, 2*Math.PI, false); // redraw the path with no plus 12 hit box fix
+        
         context.fillStyle = '#f2f7bc';
         context.fill();
     }
 
     highlight() {
+        context.beginPath();
+        context.arc(this.x*PpCM, this.y*PpCM, objClickableAreaRadius, 0, 2*Math.PI, false); // redraw the path with no plus 12 hit box fix
+
         context.strokeStyle = '#BDB76B';
         context.lineJoin = 'round';
         context.lineWidth = 4;
@@ -347,7 +352,11 @@ class Image {
             this.f = -device.f;
         }
 
-        this.sPrime = (this.s*this.f)/(this.s - this.f);
+        if (this.s == this.f) {
+            this.sPrime = 99999999999999; // in case of image formed at infinity
+        } else {
+            this.sPrime = (this.s*this.f)/(this.s - this.f);
+        }
         
         if (device.isConcLen.checked || device.isConvLen.checked) {
             if (leftToRight == true) {
