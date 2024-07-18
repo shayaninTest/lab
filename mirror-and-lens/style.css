@@ -128,6 +128,7 @@ input[type=range] {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px;
 }
 
 #removeDeviceButton {
@@ -141,6 +142,7 @@ input[type=range] {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px;
 }
 
 #previousButton {
@@ -156,6 +158,7 @@ input[type=range] {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px;
 }
 #previousButton:hover {
     color: #0e71ab;
@@ -177,6 +180,7 @@ input[type=range] {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px;
 }
 #nextButton:hover {
     color: #0e71ab;
