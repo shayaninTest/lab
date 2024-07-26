@@ -1,0 +1,211 @@
+.SimName {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 700;
+}
+
+.SimBox {
+    position: relative;
+    height: 780px;
+    background-color: #212121;
+    top: 10px;
+}
+
+#canvas {
+    touch-action: none;
+    border-radius: 18px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+.overlay {
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+#canvasTop {
+    touch-action: none;
+    border-radius: 18px;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+}
+
+.addDeviceButton {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-322px, 598px);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.removeDeviceButton {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-276px, 598px);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.previousButton {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-140px, 592px);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.nextButton {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(110px, 592px);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.showCalculation {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(390px, -20px);
+    top: 86px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Description {
+    text-align: left;
+    font-size: 16px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    width: 1200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 15px;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: -6px;
+}
+
+p {
+    color: #616161;
+}
+
+input[type=range] {
+    accent-color: rgb(116, 116, 116);
+}
+
+#addDeviceButton {
+    background-color: #2ebe8a;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    font-family: Material Icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+#removeDeviceButton {
+    background-color: #e96464;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    font-family: Material Icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+#previousButton {
+    background-color: #a1be2e00;
+    border-color: #a1be2e00;
+    color: #323232;
+    width: 32px;
+    height: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 8px;
+    font-family: Material Icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+#previousButton:hover {
+    color: #0e71ab;
+}
+#previousButton:active {
+    color: #a5a5a5;
+}
+
+#nextButton {
+    background-color: #a1be2e00;
+    border-color: #a1be2e00;
+    color: #323232;
+    width: 32px;
+    height: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 8px;
+    font-family: Material Icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+#nextButton:hover {
+    color: #0e71ab;
+}
+#nextButton:active {
+    color: #a5a5a5;
+}
+
+#showCalculation {
+    background-color: #ffffff94;
+    border-color: #a1be2e00;
+    color: #323232;
+    width: 180px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 8px;
+    font-family: Mitr, Material Icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#showCalculation:hover {
+    background-color: #ffffffe1;
+}
+#showCalculation:active {
+    background-color: #ffffffe1;
+}

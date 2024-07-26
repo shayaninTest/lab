@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=1300 maximum-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Mirrors and Lenses</title>
+    </head>
+
+    <body>
+        <div class="SimName">
+            Mirrors and Lenses
+        </div>
+
+        <div class="SimBox">
+            <canvas id="canvas" width="1200" height="700" style="background: url('./Illustration/Exports/BG.png')"></canvas>
+            <img class='overlay' src="./Illustration/Exports/Overlay.png" alt="" />
+
+            <div class='addDeviceButton'>
+                <input type='button' id='addDeviceButton' value='&#xe145;'>
+            </div>
+            <div class='removeDeviceButton'>
+                <input type='button' id='removeDeviceButton' value='&#xe15b;'>
+            </div>
+
+            <div class='previousButton'>
+                <input type='button' id='previousButton' value='&#xe5de;'>
+            </div>
+            <div class='nextButton'>
+                <input type='button' id='nextButton' value='&#xe5df;'>
+            </div>
+
+            <div class='showCalculation'>
+                <input type='button' id='showCalculation' value='การคำนวณ           +'>
+            </div>
+            <div style='display:none;'>
+                <img id='calculationImage' src='./Illustration/Exports/Calculation.png' width='180' height='190' />
+            </div>
+
+            <canvas id="canvasTop" width="1200" height="700"></canvas>
+        </div>
+
+        <div class="Description">
+            <h2>
+                Description
+            </h2>
+            <p>
+                ซิมมูเลชันจำลองการเกิดภาพจากกระจกและเลนส์
+            </p>
+            <h2>
+                Technical Details
+            </h2>
+            <p>
+                พัฒนาบน JavaScript และเรนเดอร์ด้วย HTML Canvas
+            </p>
+            <p>
+                Developer : Shayanin Vanichrudee
+            </p>
+        </div>
+
+        <script src="Mirror and Lens.js"></script>
+    </body>
+</html>
